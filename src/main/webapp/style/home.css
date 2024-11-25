@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Chilanka', cursive;
+    width: 100%;
+    height: 100vh;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+}
+
+#header {
+    width: 90%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid rgb(236, 210, 175);
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+#header #nav {
+    display: flex;
+    width: 50%;
+    height: 60px;
+    justify-content: space-evenly;
+
+}
+
+#nav .sub-nav {
+    display: flex;
+    align-items: center;
+    flex-basis: 20%;
+    justify-content: center;
+}
+
+#nav .sub-nav a {
+    font-size: 18px;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 60px;
+    color: black;
+}
+#user .sub-user a {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 10px;
+    color: black;
+}
+/*#user .sub-user span {*/
+/*    position: absolute;*/
+/*    border-radius: 50%;*/
+/*    padding: 5px 10px;*/
+/*    font-size: 15px;*/
+/*    font-weight: bold;*/
+/*    line-height: 1;*/
+/*    top: 8px;*/
+/*}*/
+
+#header #user {
+    display: flex;
+    width: 25%;
+    height: 60px;
+    justify-content: flex-end;
+}
+
+#user .sub-user {
+    flex-basis: 30%;
+    display: flex;
+}
+
+#user .sub-user:nth-child(1) {
+    /*border: 1px solid rgb(236, 210, 175);*/
+    border-radius: 10px;
+}
+
+#header a:hover {
+    background-color: rgb(236, 210, 175);
+
+}
+
+/* ---Content--- */
+#content {
+    background-color: rgb(238, 227, 213);
+    margin-top: 20px;
+    display: flex;
+}
+
+#content-img {
+    padding: 20px 0 20px 40px;
+}
+
+
+#content-introduce {
+    width: 60%;
+    padding: 40px 100px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.introduce-title {
+    height: 100px;
+}
+
+.introduce-title h3 {
+    font-size: 50px;
+}
+
+.introduce-text p {
+    font-size: 30px;
+    color: rgb(129, 94, 50);
+}
+
+#content .content-sub img {
+    width: 500px;
+    height: auto;
+}
+
+/* ----Footer---- */
+#footer {
+    width: 100%;
+    height: 50px;
+    background-color: #8B4513;
+}
+
+#footer a {
+    color: wheat;
+    line-height: 50px;
+    margin-left: 30px;
+}

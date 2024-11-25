@@ -1,0 +1,168 @@
+#main {
+    width: 100%;
+    height: 100%;
+}
+
+#header {
+    width: 90%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid rgb(236, 210, 175);
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+#header #nav {
+    display: flex;
+    width: 50%;
+    height: 60px;
+    justify-content: space-evenly;
+
+}
+
+#nav .sub-nav {
+    display: flex;
+    align-items: center;
+    flex-basis: 20%;
+    justify-content: center;
+}
+
+#nav .sub-nav a {
+    font-size: 18px;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 60px;
+    color: black;
+}
+#user .sub-user a {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 10px;
+    color: black;
+}
+
+#header #user {
+    display: flex;
+    width: 25%;
+    height: 60px;
+    justify-content: flex-end;
+}
+
+#user .sub-user {
+    flex-basis: 30%;
+    display: flex;
+}
+
+#user .sub-user:nth-child(1) {
+    border-radius: 10px;
+}
+
+#header a:hover {
+    background-color: rgb(236, 210, 175);
+
+}
+/*----------*/
+
+.cart-container {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px;
+}
+
+.cart-table th,
+.cart-table td {
+    border-bottom: 1px solid #ddd; /* Chỉ có border-bottom */
+    padding: 8px;
+    text-align: center;
+}
+
+.cart-table th {
+    background-color: #f2f2f2;
+}
+
+/* Chỉnh kích cỡ ảnh */
+.product-image {
+    width: 50px;  /* Đặt chiều rộng ảnh là 50px */
+    height: auto;
+}
+
+/* Nút cập nhật */
+.update-btn {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.update-btn:hover {
+    background-color: #45a049;
+}
+
+/* Nút Xóa */
+.delete-btn {
+    padding: 5px 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.delete-btn:hover {
+    background-color: darkred;
+}
+
+.cart-summary {
+    text-align: right;
+}
+
+.cart-summary h3 {
+    margin-bottom: 10px;
+}
+
+#checkoutBtn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#checkoutBtn:hover {
+    background-color: #45a049;
+}
+/*--------------*/
+
+/*---------*/
+#footer {
+    width: 100%;
+    height: 50px;
+    background-color: #8B4513;
+    margin-top: 10px;
+}
+
+#footer a {
+    color: wheat;
+    line-height: 50px;
+    margin-left: 30px;
+}

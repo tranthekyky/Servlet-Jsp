@@ -1,0 +1,196 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Chilanka', cursive;
+    width: 100%;
+    height: 100vh;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+}
+
+#header {
+    width: 90%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid rgb(236, 210, 175);
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+#header #nav {
+    display: flex;
+    width: 50%;
+    height: 60px;
+    justify-content: space-evenly;
+
+}
+
+#nav .sub-nav {
+    display: flex;
+    align-items: center;
+    flex-basis: 20%;
+    justify-content: center;
+}
+
+#nav .sub-nav a {
+    font-size: 18px;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 60px;
+    color: black;
+}
+
+#header #user {
+    display: flex;
+    width: 25%;
+    height: 60px;
+    justify-content: space-evenly;
+}
+
+#user .sub-user {
+    flex-basis: 40%;
+    display: flex;
+}
+
+#user .sub-user:nth-child(1) {
+    border: 1px solid rgb(236, 210, 175);
+    border-radius: 10px;
+}
+
+#user .sub-user a {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 10px;
+    color: black;
+}
+
+#header a:hover {
+    background-color: rgb(236, 210, 175);
+
+}
+
+/* ---login--- */
+#login {
+    width: 80%;
+    height: 500px;
+    background-image: url("https://themewagon.github.io/waggy/images/background-img.png");
+    margin: 10px auto;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
+
+}
+
+#login .item-login {
+    width: 60%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.item-login .form-title {
+    font-size: 30px;
+    font-weight: 500;
+    color: #8B4513;
+}
+
+
+.item-login .form-input {
+    width: 400px;
+    height: 400px;
+}
+
+.item-login .form-input form {
+    width: 100%;
+    height: 80%;
+}
+
+.item-login .chain {
+    width: 100%;
+    text-align: center;
+}
+
+.item-login .form-input .item-form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.item-form input {
+    height: 40px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    padding-left: 20px;
+    color: #8B4513;
+    border-style: solid;
+    font-size: 18px;
+
+}
+
+.item-form input:focus {
+    border-color: #8B4513;
+    outline: none;
+}
+
+.form-input .item-form p {
+    color: red;
+    margin: 20px auto;
+
+}
+
+
+.item-form button {
+    height: 40px;
+    /* margin-bottom: 10px; */
+    border-radius: 10px;
+    cursor: pointer;
+    color: wheat;
+    border-color: #8B4513;
+    background-color: #8B4513;
+    font-size: 18px;
+
+}
+
+.item-form button:hover {
+    background-color: #7a3a10;
+}
+
+.item-login .form-input .chain {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.form-input .chain:hover a {
+    color: blue;
+}
+
+/* ----Footer---- */
+#footer {
+    width: 100%;
+    height: 50px;
+    background-color: #8B4513;
+}
+
+#footer a {
+    color: wheat;
+    line-height: 50px;
+    margin-left: 30px;
+}

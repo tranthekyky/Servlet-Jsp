@@ -1,0 +1,311 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Chilanka', cursive;
+    width: 100%;
+    height: 100vh;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+}
+
+#header {
+    width: 90%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid rgb(236, 210, 175);
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+#header #nav {
+    display: flex;
+    width: 50%;
+    height: 60px;
+    justify-content: space-evenly;
+
+}
+
+#nav .sub-nav {
+    display: flex;
+    align-items: center;
+    flex-basis: 20%;
+    justify-content: center;
+}
+
+#nav .sub-nav a {
+    font-size: 18px;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 60px;
+    color: black;
+}
+#user .sub-user a {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 10px;
+    color: black;
+}
+/*#user .sub-user span {*/
+/*    position: absolute;*/
+/*    border-radius: 50%;*/
+/*    padding: 5px 10px;*/
+/*    font-size: 15px;*/
+/*    font-weight: bold;*/
+/*    line-height: 1;*/
+/*    top: 8px;*/
+/*}*/
+
+#header #user {
+    display: flex;
+    width: 25%;
+    height: 60px;
+    justify-content: flex-end;
+}
+
+#user .sub-user {
+    flex-basis: 30%;
+    display: flex;
+}
+
+#user .sub-user:nth-child(1) {
+    /*border: 1px solid rgb(236, 210, 175);*/
+    border-radius: 10px;
+}
+
+#header a:hover {
+    background-color: rgb(236, 210, 175);
+
+}
+
+/* ---Content--- */
+#content {
+
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#content #nav-content {
+    width: 80%;
+    height: 50px;
+    background-color: rgb(238, 227, 213);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#nav-content .item-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+#nav-content #title {
+    width: 20%;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 10px;
+    color: #8B4513;
+}
+
+#nav-content #nav-search {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 18px;
+    text-align: center;
+}
+
+#nav-search a {
+    width: 25%;
+    line-height: 40px;
+    color: #8B4513;
+}
+
+#nav-search a:hover {
+    color: black;
+}
+
+#nav-search .list-search:hover .sub-nav-search {
+    display: block;
+}
+
+
+#nav-search .list-search {
+    position: relative;
+}
+
+#nav-search .sub-nav-search {
+    width: 100%;
+    position: absolute;
+    background-color: rgb(238, 226, 210);
+    left: 80px;
+    list-style: none;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
+    display: none;
+    line-height: 40px;
+}
+
+.sub-nav-search a {
+    margin-right: 20px;
+}
+
+
+#nav-content #input-search {
+    width: 25%;
+}
+
+#input-search input {
+    width: 80%;
+    line-height: 40px;
+    font-size: 18px;
+    padding-left: 20px;
+    border-radius: 10px;
+    color: #8B4513;
+    border-style: none;
+}
+
+#input-search input:focus {
+    /* /* border-color: red; */
+    outline: #8B4513 solid;
+}
+
+#input-search button {
+    width: 18%;
+    font-size: 24px;
+    border-style: none;
+    border-radius: 10px;
+    background-color: #8B4513;
+    color: antiquewhite;
+    cursor: pointer;
+    line-height: 40px;
+
+}
+
+#input-search button:hover {
+    background-color: #5c3c26;
+}
+
+#list-product {
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#list-product .item-product {
+    width: calc(90% / 4);
+    height: 400px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.item-product #image {
+    width: 100%;
+    height: 65%;
+    background-color: #EEEBE6;
+    border-radius: 10px;
+
+
+}
+
+.item-product #image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.item-product #info {
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#info span {
+    color: #8B4513;
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 5px;
+}
+
+
+.item-product #add-tocart {
+    height: 15%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#add-tocart a {
+    line-height: 46px;
+    border: #8B4513 1px solid;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 700;
+    color: #8B4513;
+}
+#add-tocart a i {
+    color: red;
+    font-size: 20px;
+    line-height: 46px;
+
+}
+
+#add-tocart a:hover {
+    background-color: antiquewhite;
+}
+
+#add-tocart a:nth-child(1) {
+    width: 60%;
+    margin: auto;
+
+}
+
+#add-tocart a:nth-child(2) {
+    width: 30%;
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+
+/* ----Footer---- */
+#footer {
+    width: 100%;
+    height: 50px;
+    background-color: #8B4513;
+}
+
+#footer a {
+    color: wheat;
+    line-height: 50px;
+    margin-left: 30px;
+}
